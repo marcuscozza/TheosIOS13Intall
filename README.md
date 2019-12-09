@@ -24,7 +24,7 @@ This installation guide will install theos.
 > /opt/theos/bin/nic.pl
 
 and check that the output is as follows
-'''
+```
  NIC 2.0 - New Instance Creator
  ------------------------------
   [1.] iphone/activator_event
@@ -39,7 +39,7 @@ and check that the output is as follows
   [10.] iphone/tweak
   [11.] iphone/xpc_service
  Choose a Template (required):
-'''
+```
 ## Making a tweak
 This will show you how to create a simple tweak. using SSH and filza
 1) run 
@@ -71,13 +71,13 @@ The project name of your tweak should now be in your root directory and their sh
 and click save then cancel then done
 
 12) repeat step 10 but instead select Tweak.x, you must select all and delete, this is where you can code for your tweak, i have attached a sample tweak which will make the dock transparent.
-'''
+```
 %hook SBDockView
 -(void)setBackgroundAlpha:(double)arg1{
 %orig(0.0);
 }
 %end
-'''
+```
 and click save then cancel then done
 
 13) using filza travel to this directory /opts/theos/bin/, and find `fakeroot.sh` file and open it like in step 10 and at the bottom you should see
