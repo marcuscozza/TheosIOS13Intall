@@ -58,7 +58,7 @@ This will show you how to create a simple tweak. using SSH and filza
 
 The project name of your tweak should now be in your root directory and their should be 4 files which are `Makefile`, `Tweak.x`, `control` and `(tweakname).plist`.
 
-9) open filza and go to root and then your newly created tweak folder and check that all 4 files are their.
+9) open filza and go to root and then go to your newly created tweak folder and check that all 4 files are their.
 
 10) click edit top left and select Makefile and click more bottom right and select open with text editor.
 
