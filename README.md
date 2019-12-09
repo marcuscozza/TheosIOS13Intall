@@ -1,7 +1,7 @@
 # Theos IOS13 Intallation Guide
 How to install theos on ios 13 jailbreak
 - tested version:
--- ``` 13.2.2 ```
+   - ``` 13.2.2 ```
 
 ## Setup
 
