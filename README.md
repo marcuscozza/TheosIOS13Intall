@@ -24,21 +24,22 @@ This installation guide will install theos.
 > /opt/theos/bin/nic.pl
 
 and check that the output is as follows
-> NIC 2.0 - New Instance Creator
-> ------------------------------
->  [1.] iphone/activator_event
->  [2.] iphone/application_modern
->  [3.] iphone/application_swift
->  [4.] iphone/flipswitch_switch
->  [5.] iphone/framework
->  [6.] iphone/library
->  [7.] iphone/preference_bundle_modern
->  [8.] iphone/tool
->  [9.] iphone/tool_swift
->  [10.] iphone/tweak
->  [11.] iphone/xpc_service
-> Choose a Template (required):
-
+'''
+ NIC 2.0 - New Instance Creator
+ ------------------------------
+  [1.] iphone/activator_event
+  [2.] iphone/application_modern
+  [3.] iphone/application_swift
+  [4.] iphone/flipswitch_switch
+  [5.] iphone/framework
+  [6.] iphone/library
+  [7.] iphone/preference_bundle_modern
+  [8.] iphone/tool
+  [9.] iphone/tool_swift
+  [10.] iphone/tweak
+  [11.] iphone/xpc_service
+ Choose a Template (required):
+'''
 ## Making a tweak
 This will show you how to create a simple tweak. using SSH and filza
 1) run 
