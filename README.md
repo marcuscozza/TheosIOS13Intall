@@ -11,17 +11,15 @@ Install Theos Dependencies from Cydia
 ## Installation Guide 
 This installation guide will install theos.
 1) SSH into the Phone and create 'opt' folder in root directory
-> mkdir /opt
+``` mkdir /opt ```
 
-2) set directory > export THEOS=/opt/theos
+2) set directory ``` export THEOS=/opt/theos ```
 
-3) inside the opt folder run git clone
-> git clone --recursive https://github.com/theos/theos.git $THEOS
+3) inside the opt folder run git clone ``` git clone --recursive https://github.com/theos/theos.git $THEOS ```
 
 4) You need to download an sdk for your deivce and place it inside /opt/theos/sdks [sdk downloads for some versions](https://github.com/theos/sdks)
 
-5) run
-> /opt/theos/bin/nic.pl
+5) run ``` /opt/theos/bin/nic.pl ```
 
 and check that the output is as follows
 ```
@@ -42,13 +40,9 @@ and check that the output is as follows
 ```
 ## Making a tweak
 This will show you how to create a simple tweak. using SSH and filza
-1) run 
-> export THEOS=/opt/theos
-2) run 
-> /opt/theos/bin/nic.pl
-
-3) run
-> cd /
+1) run ``` export THEOS=/opt/theos ```
+2) run ``` /opt/theos/bin/nic.pl ```
+3) run ``` cd / ```
 
 4) select iphone/tweak e.g `[10.] iphone/tweak` type in 10
 
@@ -58,7 +52,7 @@ This will show you how to create a simple tweak. using SSH and filza
 
 7) enter author name e.g `john`
 
-7) just click enter as no changes are needed
+8) after you enter your author name just click enter as no changes are needed
 
 The project name of your tweak should now be in your root directory and their should be 4 files which are `Makefile`, `Tweak.x`, `control` and `(tweakname).plist`.
 
@@ -67,7 +61,7 @@ The project name of your tweak should now be in your root directory and their sh
 10) click edit top left and select Makefile and click more bottom right and select open with text editor.
 
 11) At the top of the file type in
-> ARCHS = armv7 arm64
+``` ARCHS = armv7 arm64 ```
 and click save then cancel then done
 
 12) repeat step 10 but instead select Tweak.x, you must select all and delete, this is where you can code for your tweak, i have attached a sample tweak which will make the dock transparent.
@@ -83,19 +77,19 @@ and click save then cancel then done
 13) using filza travel to this directory /opts/theos/bin/, and find `fakeroot.sh` file and open it like in step 10 and at the bottom you should see
 > $fakeroot $cmd
 you must change it to
-> $fakeroot perl /opt/theos/bin/$cmd
+``` $fakeroot perl /opt/theos/bin/$cmd ```
 and click save then cancel then done
 
 ## Compile and install a tweak
 This will show you how to compile and install your tweak which will show up in cydia.
 1) you must cd into your tweak directory
-> cd /`tweakname`
+``` cd /`tweakname` ```
 2) run 
-> export THEOS=/opt/theos
+``` export THEOS=/opt/theos ```
 3) run
-> make package 
+``` make package  ```
 4) run
-> make install
+``` make install ```
 your device will respring and your tweak will be active.
 
 ## Uninstall a tweak
