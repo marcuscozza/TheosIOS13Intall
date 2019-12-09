@@ -22,6 +22,7 @@ This installation guide will install theos.
 
 5) run
 > /opt/theos/bin/nic.pl
+
 and check that the output is as follows
 > NIC 2.0 - New Instance Creator
 > ------------------------------
