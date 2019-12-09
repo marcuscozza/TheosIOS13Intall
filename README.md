@@ -54,19 +54,21 @@ This will show you how to create a simple tweak. using SSH and filza
 
 7) enter author name e.g `john`
 
-8) after you enter your author name just click enter as no changes are needed
+8) enter MobileSubstrate Bundle filter:  `com.apple.springboard`
+
+9) List of applications to terminate upon installation: just click enter
 
 The project name of your tweak should now be in your root directory and their should be 4 files which are `Makefile`, `Tweak.x`, `control` and `(tweakname).plist`.
 
-9) open filza and go to root and then go to your newly created tweak folder and check that all 4 files are their.
+10) open filza and go to root and then go to your newly created tweak folder and check that all 4 files are their.
 
-10) click edit top left and select Makefile and click more bottom right and select open with text editor.
+11) click edit top left and select Makefile and click more bottom right and select open with text editor.
 
-11) At the top of the file type in
+12) At the top of the file type in
 ``` ARCHS = armv7 arm64 ```
 and click save then cancel then done
 
-12) repeat step 10 but instead select Tweak.x, you must select all and delete, this is where you can code for your tweak, i have attached a sample tweak which will make the dock transparent.
+13) repeat step 10 but instead select Tweak.x, you must select all and delete, this is where you can code for your tweak, i have attached a sample tweak which will make the dock transparent.
 ```
 %hook SBDockView
 -(void)setBackgroundAlpha:(double)arg1{
@@ -76,7 +78,7 @@ and click save then cancel then done
 ```
 and click save then cancel then done
 
-13) using filza travel to this directory /opts/theos/bin/, and find `fakeroot.sh` file and open it like in step 10 and at the bottom you should see
+14) using filza travel to this directory /opts/theos/bin/, and find `fakeroot.sh` file and open it like in step 10 and at the bottom you should see
 ``` $fakeroot $cmd ``` you must change it to
 ``` $fakeroot perl /opt/theos/bin/$cmd ```
 and click save then cancel then done
