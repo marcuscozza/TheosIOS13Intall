@@ -5,10 +5,10 @@ How to install theos on ios 13 jailbreak
 
 ## Setup
 
-Install PuTTY on windows and SSH into iphone [Tutorial on how to install PuTTY and SSH](https://www.reddit.com/r/jailbreak/comments/8wq55h/guide_how_to_ssh_into_your_device_once_it_has/)
+- Install PuTTY on windows and SSH into iphone [Tutorial on how to install PuTTY and SSH](https://www.reddit.com/r/jailbreak/comments/8wq55h/guide_how_to_ssh_into_your_device_once_it_has/)
 
-Install Filza File Manager from Cydia 
-Install Theos Dependencies from Cydia
+- Install Filza File Manager from Cydia 
+- Install Theos Dependencies from Cydia
 
 ## Installation Guide 
 This installation guide will install theos.
