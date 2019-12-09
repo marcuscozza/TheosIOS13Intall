@@ -75,8 +75,7 @@ and click save then cancel then done
 and click save then cancel then done
 
 13) using filza travel to this directory /opts/theos/bin/, and find `fakeroot.sh` file and open it like in step 10 and at the bottom you should see
-> $fakeroot $cmd
-you must change it to
+> $fakeroot $cmd you must change it to
 ``` $fakeroot perl /opt/theos/bin/$cmd ```
 and click save then cancel then done
 
